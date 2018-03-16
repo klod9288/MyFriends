@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/colorPrimary"
-    android:layout_height="60dp"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-    <!--tools:context="com.example.srongklod.myfriends.MainActivity">-->
+    android:layout_height="match_parent"
+    tools:context="com.example.srongklod.myfriends.MainActivity">
 
+    <!--Wallpaper-->
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@drawable/wallpaper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     <!--Content Fragment-->
     <FrameLayout
         android:id="@+id/contentMainFragment"
@@ -15,12 +19,5 @@
         android:layout_height="match_parent"/>
 
 
+</android.support.constraint.ConstraintLayout>
 
-
-
-
-
-
-
-
-</android.support.v7.widget.Toolbar>
