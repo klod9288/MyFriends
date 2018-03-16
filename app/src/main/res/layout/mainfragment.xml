@@ -11,7 +11,7 @@
 
         <!--appName-->
         <TextView
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
             android:textStyle="bold"
             android:textSize="30dp"
             android:text="MY FRIENDS"
@@ -35,6 +35,8 @@
 
             <EditText
                 android:id="@+id/edtEmail"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
                 android:inputType="textEmailAddress"
                 android:hint="example@email.com"
                 android:layout_width="match_parent"
@@ -57,6 +59,8 @@
                 android:layout_height="wrap_content" />
 
             <EditText
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
                 android:id="@+id/edtPassWord"
                 android:inputType="numberPassword"
                 android:hint="******"
@@ -65,6 +69,18 @@
 
 
         </LinearLayout>
+
+        <!--Title-->
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="LOGIN WITH"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/colorWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
         <!--Login with-->
         <LinearLayout
@@ -75,20 +91,23 @@
 
             <!--Facebook-->
             <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:src="@drawable/facebook" />
 
             <!--Google pus-->
             <ImageButton
+                android:src="@drawable/googlepush"
                 android:layout_weight="1"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content" />
 
             <!--Twitter-->
             <ImageButton
+                android:src="@drawable/twitter"
                 android:layout_weight="1"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content" />
 
 
@@ -112,6 +131,7 @@
 
     <!--SigIn Button-->
     <Button
+        android:background="@color/colorSmoke"
         android:id="@+id/btnSigIn"
         android:text="SIGN IN"
         android:textSize="20dp"
